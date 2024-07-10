@@ -1,0 +1,23 @@
+{
+  "name": "com.zloivan.unity-sound-system",
+  "version": "1.0.0",
+  "displayName": "Unity Sound System",
+  "description": "Efficient sound system for unity that support object pulling",
+  "unity": "2019.1",
+  "keywords": [
+    "unity",
+    "sound system"
+  ],
+  "author": {
+    "name": "Ivan Khomichkov",
+    "url": "https://github.com/zloivan"
+  },
+  "documentationUrl": "https://github.com/zloivan/ServiceLocator/blob/master/README.md",
+  "samples": [
+    {
+      "displayName": "Service Locator Usage Example",
+      "description": "Contains Scene and couple of events to demonstrate usage of the service locator. Example involves switching scenes so add Second to `scenes in build`",
+      "path": "Samples~/ServiceLocatorExamples"
+    }
+  ]
+}
