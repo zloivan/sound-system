@@ -8,7 +8,7 @@ namespace Utilities.SoundService.Runtime
     {
         private readonly SoundManager _soundManager;
         private SoundData _soundData;
-        private Vector3 _position = Vector3.zero;
+        private readonly Vector3 _position = Vector3.zero;
         private Vector2? _randomizePitch;
         private readonly helpers.ILogger _logger = new SoundServiceLogger();
 
