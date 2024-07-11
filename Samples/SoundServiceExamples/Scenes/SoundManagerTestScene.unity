@@ -260,16 +260,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundData:
     Clip: {fileID: 8300000, guid: b2b4f2672bc0d0c4b8d3bf361e6d3ed9, type: 3}
-    MixerGroup: {fileID: 24300002, guid: 9254a56818e910542be0530755599176, type: 2}
+    MixerGroup: {fileID: 829101792355038784, guid: 9254a56818e910542be0530755599176, type: 2}
     IsLooping: 0
-    IsFriquentSound: 1
+    IsFrequentSound: 0
   _ambient:
     Clip: {fileID: 8300000, guid: 3eb8b6f8a6b2a1e45ba45703071f3440, type: 3}
-    MixerGroup: {fileID: 24300002, guid: 9254a56818e910542be0530755599176, type: 2}
+    MixerGroup: {fileID: -8035776875592987835, guid: 9254a56818e910542be0530755599176, type: 2}
     IsLooping: 1
-    IsFriquentSound: 0
+    IsFrequentSound: 0
   _soundManager: {fileID: 1643502552}
-  _fireRate: 0.07
+  _fireRate: 0.1
 --- !u!114 &1643502552 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8955479467755683024, guid: 6539586cccc95aa44951cc53a0a07dff, type: 3}

@@ -8,7 +8,7 @@ namespace Utilities.SoundService.Runtime
         private readonly SoundManager _soundManager;
         private SoundData _soundData;
         private Vector3 _position = Vector3.zero;
-        private bool _randomizePitch = false;
+        private Vector2? _randomizePitch;
 
         public SoundBuilder(SoundManager soundManager)
         {
@@ -27,9 +27,9 @@ namespace Utilities.SoundService.Runtime
             return this;
         }
 
-        public SoundBuilder WithRandomPitch()
+        public SoundBuilder WithRandomPitch(Vector2? randomPitch = null)
         {
-            _randomizePitch = true;
+            _randomizePitch = randomPitch ?? new Vector2(-0.05f, 0.05f);
             return this;
         }
 
@@ -45,14 +45,14 @@ namespace Utilities.SoundService.Runtime
             soundEmitter.transform.position = _position;
             soundEmitter.transform.parent = _soundManager.transform;
 
-            if (_randomizePitch)
+            if (_randomizePitch is not null)
             {
-                soundEmitter.RandomizePitch();
+                soundEmitter.RandomizePitch(_randomizePitch.Value.x, _randomizePitch.Value.y);
             }
 
-            if (_soundData.IsFriquentSound)
+            if (_soundData.IsFrequentSound)
             {
-                _soundManager.FriquentSoundEmitters.Enqueue(soundEmitter);
+                _soundManager.FrequentSoundEmitters.Enqueue(soundEmitter);
             }
 
             soundEmitter.Play();

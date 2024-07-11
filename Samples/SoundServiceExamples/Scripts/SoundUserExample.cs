@@ -42,7 +42,7 @@ namespace Utilities
         {
             _soundManager.CreateSound()
                 .WithSoundData(_soundData)
-                .WithRandomPitch()
+                .WithRandomPitch(new Vector2(-.05f,0.05f))
                 .Play();
         }
     }

@@ -10,6 +10,6 @@ namespace Utilities.SoundService.Runtime.data
         public AudioClip Clip;
         public AudioMixerGroup MixerGroup;
         public bool IsLooping;
-        public bool IsFriquentSound;
+        public bool IsFrequentSound;
     }
 }

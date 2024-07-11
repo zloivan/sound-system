@@ -13,7 +13,7 @@ namespace Utilities.SoundService.Runtime
         private readonly List<SoundEmitter> _activeSoundEmitters = new();
         private readonly helpers.ILogger _logger = new SoundServiceLogger();
 
-        public readonly Queue<SoundEmitter> FriquentSoundEmitters = new();
+        public readonly Queue<SoundEmitter> FrequentSoundEmitters = new();
 
         [SerializeField]
         private SoundEmitter _soundEmitterPrefab;
@@ -89,10 +89,10 @@ namespace Utilities.SoundService.Runtime
 
         public bool CanPlaySound(SoundData data)
         {
-            if (data.IsFriquentSound == false)
+            if (data.IsFrequentSound == false)
                 return true;
-            if (FriquentSoundEmitters.Count < _maxSoundInstances ||
-                !FriquentSoundEmitters.TryDequeue(out var emitter))
+            if (FrequentSoundEmitters.Count < _maxSoundInstances ||
+                !FrequentSoundEmitters.TryDequeue(out var emitter))
                 return true;
 
             try
