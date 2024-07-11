@@ -4,7 +4,6 @@ using UnityEngine.Pool;
 using Utilities.SoundService.helpers;
 using Utilities.SoundService.Runtime.data;
 
-
 namespace Utilities.SoundService.Runtime
 {
     public class SoundManager : MonoBehaviour
@@ -12,7 +11,6 @@ namespace Utilities.SoundService.Runtime
         private IObjectPool<SoundEmitter> _soundEmitterPool;
         private readonly List<SoundEmitter> _activeSoundEmitters = new();
         private readonly helpers.ILogger _logger = new SoundServiceLogger();
-
         public readonly Queue<SoundEmitter> FrequentSoundEmitters = new();
 
         [SerializeField]
@@ -40,7 +38,6 @@ namespace Utilities.SoundService.Runtime
             DontDestroyOnLoad(gameObject);
             InitializePool();
         }
-
 
         private void InitializePool()
         {
@@ -91,10 +88,10 @@ namespace Utilities.SoundService.Runtime
         {
             if (data.IsFrequentSound == false)
                 return true;
+            
             if (FrequentSoundEmitters.Count < _maxSoundInstances ||
                 !FrequentSoundEmitters.TryDequeue(out var emitter))
                 return true;
-
             try
             {
                 emitter.Stop();
@@ -107,7 +104,6 @@ namespace Utilities.SoundService.Runtime
 
             return false;
         }
-
 
         public SoundEmitter GetEmitter()
         {

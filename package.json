@@ -12,12 +12,12 @@
     "name": "Ivan Khomichkov",
     "url": "https://github.com/zloivan"
   },
-  "documentationUrl": "https://github.com/zloivan/ServiceLocator/blob/master/README.md",
+  "documentationUrl": "https://github.com/zloivan/SoundService/blob/master/README.md",
   "samples": [
     {
-      "displayName": "Service Locator Usage Example",
-      "description": "Contains Scene and couple of events to demonstrate usage of the service locator. Example involves switching scenes so add Second to `scenes in build`",
-      "path": "Samples~/ServiceLocatorExamples"
+      "displayName": "Sound System Examples",
+      "description": "Contain Scene with example of using SoundManager and Sound Emitters. In Example scene press space to start shooting sound. Checkout SoundUserExample to see usage of Manager",
+      "path": "Samples~/SoundServiceExamples"
     }
   ]
 }

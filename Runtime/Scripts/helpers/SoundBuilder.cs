@@ -1,4 +1,5 @@
 using UnityEngine;
+using Utilities.SoundService.helpers;
 using Utilities.SoundService.Runtime.data;
 
 namespace Utilities.SoundService.Runtime
@@ -9,6 +10,7 @@ namespace Utilities.SoundService.Runtime
         private SoundData _soundData;
         private Vector3 _position = Vector3.zero;
         private Vector2? _randomizePitch;
+        private readonly helpers.ILogger _logger = new SoundServiceLogger();
 
         public SoundBuilder(SoundManager soundManager)
         {
@@ -21,20 +23,21 @@ namespace Utilities.SoundService.Runtime
             return this;
         }
 
-        public SoundBuilder WithPosition(Vector3 position)
-        {
-            _position = position;
-            return this;
-        }
-
         public SoundBuilder WithRandomPitch(Vector2? randomPitch = null)
         {
             _randomizePitch = randomPitch ?? new Vector2(-0.05f, 0.05f);
             return this;
         }
 
+
         public void Play()
         {
+            if (_soundData == null)
+            {
+                _logger.LogError("Sound data is null when creating sound");
+                return;
+            }
+            
             if (!_soundManager.CanPlaySound(_soundData))
             {
                 return;
@@ -55,6 +58,7 @@ namespace Utilities.SoundService.Runtime
                 _soundManager.FrequentSoundEmitters.Enqueue(soundEmitter);
             }
 
+            
             soundEmitter.Play();
         }
     }
