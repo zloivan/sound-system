@@ -1,7 +1,8 @@
 using System.Collections;
 using UnityEngine;
+using Utilities.SoundService.data;
 
-namespace Utilities.SoundService.Runtime.data
+namespace Utilities.SoundService
 {
     [RequireComponent(typeof(AudioSource))]
     public class SoundEmitter : MonoBehaviour

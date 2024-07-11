@@ -1,8 +1,7 @@
 using UnityEngine;
-using Utilities.SoundService.helpers;
-using Utilities.SoundService.Runtime.data;
+using Utilities.SoundService.data;
 
-namespace Utilities.SoundService.Runtime
+namespace Utilities.SoundService.helpers
 {
     public class SoundBuilder
     {

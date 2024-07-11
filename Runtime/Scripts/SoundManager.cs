@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
+using Utilities.SoundService.data;
 using Utilities.SoundService.helpers;
-using Utilities.SoundService.Runtime.data;
 
-namespace Utilities.SoundService.Runtime
+namespace Utilities.SoundService
 {
     public class SoundManager : MonoBehaviour
     {

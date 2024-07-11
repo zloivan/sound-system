@@ -1,8 +1,8 @@
 using UnityEngine;
-using Utilities.SoundService.Runtime;
-using Utilities.SoundService.Runtime.data;
+using Utilities.SoundService;
+using Utilities.SoundService.data;
 
-namespace Utilities
+namespace Utilities.SoundService.Samples.SoundServiceExamples.Scripts
 {
     public class SoundUserExample : MonoBehaviour
     {
