@@ -1,8 +1,8 @@
+using IKhom.SoundSystem.Runtime.components;
+using IKhom.SoundSystem.Runtime.data;
 using UnityEngine;
-using Utilities.SoundService;
-using Utilities.SoundService.data;
 
-namespace Utilities.SoundService.Samples.SoundServiceExamples.Scripts
+namespace IKhom.SoundSystem.Samples.SoundSystemExamples.Scripts
 {
     public class SoundUserExample : MonoBehaviour
     {

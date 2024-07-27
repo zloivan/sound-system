@@ -1,8 +1,8 @@
 using System.Collections;
+using IKhom.SoundSystem.Runtime.data;
 using UnityEngine;
-using Utilities.SoundService.data;
 
-namespace Utilities.SoundService
+namespace IKhom.SoundSystem.Runtime.components
 {
     [RequireComponent(typeof(AudioSource))]
     public class SoundEmitter : MonoBehaviour

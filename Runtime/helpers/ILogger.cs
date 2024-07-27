@@ -1,15 +1,15 @@
 using UnityEngine;
 
-namespace Utilities.SoundService.helpers
+namespace IKhom.SoundSystem.Runtime.helpers
 {
-    public interface ILogger
+    internal interface ILogger
     {
         public void Log(object message, Object context = null);
         public void LogWarning(object message, Object context = null);
         public void LogError(object message, Object context = null);
     }
 
-    public class SoundServiceLogger : ILogger
+    internal class SoundServiceLogger : ILogger
     {
         public void Log(object message, Object context)
         {

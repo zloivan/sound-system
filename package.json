@@ -1,13 +1,16 @@
 {
   "name": "com.zloivan.unity-sound-system",
   "version": "1.0.0",
-  "displayName": "Unity Sound System",
+  "displayName": "IKhom Sound System",
   "description": "Efficient sound system for unity that support object pulling",
   "unity": "2019.1",
   "keywords": [
     "unity",
     "sound system"
   ],
+  "_upm": {
+    "changelog": "-reorganize classes and assemblies"
+  },
   "author": {
     "name": "Ivan Khomichkov",
     "url": "https://github.com/zloivan"
@@ -17,7 +20,7 @@
     {
       "displayName": "Sound System Examples",
       "description": "Contain Scene with example of using SoundManager and Sound Emitters. In Example scene press space to start shooting sound. Checkout SoundUserExample to see usage of Manager",
-      "path": "Samples~/SoundServiceExamples"
+      "path": "Samples~/SoundSystemExamples"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-    "name": "SoundService",
-    "rootNamespace": "Utilities",
+    "name": "IKhom-SoundSystem",
+    "rootNamespace": "IKhom",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

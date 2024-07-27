@@ -1,0 +1,7 @@
+{
+  "name": "IKhom-SoundSystem-Samples",
+  "rootNamespace": "IKhom",
+  "references": [
+    "IKhom-SoundSystem"
+  ]
+}

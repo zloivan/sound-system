@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Audio;
 
-namespace Utilities.SoundService.data
+namespace IKhom.SoundSystem.Runtime.data
 {
     [Serializable]
     public class SoundData

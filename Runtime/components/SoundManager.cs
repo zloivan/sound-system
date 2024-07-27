@@ -1,10 +1,10 @@
 using System.Collections.Generic;
+using IKhom.SoundSystem.Runtime.data;
+using IKhom.SoundSystem.Runtime.helpers;
 using UnityEngine;
 using UnityEngine.Pool;
-using Utilities.SoundService.data;
-using Utilities.SoundService.helpers;
 
-namespace Utilities.SoundService
+namespace IKhom.SoundSystem.Runtime.components
 {
     public class SoundManager : MonoBehaviour
     {

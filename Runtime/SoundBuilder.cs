@@ -1,7 +1,9 @@
+using IKhom.SoundSystem.Runtime.components;
+using IKhom.SoundSystem.Runtime.data;
+using IKhom.SoundSystem.Runtime.helpers;
 using UnityEngine;
-using Utilities.SoundService.data;
 
-namespace Utilities.SoundService.helpers
+namespace IKhom.SoundSystem.Runtime
 {
     public class SoundBuilder
     {
@@ -27,7 +29,6 @@ namespace Utilities.SoundService.helpers
             _randomizePitch = randomPitch ?? new Vector2(-0.05f, 0.05f);
             return this;
         }
-
 
         public void Play()
         {
