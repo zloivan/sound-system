@@ -1,5 +1,5 @@
 {
-  "name": "com.zloivan.unity-sound-system",
+  "name": "com.zloivan.soundsystem",
   "version": "1.0.0",
   "displayName": "IKhom Sound System",
   "description": "Efficient sound system for unity that support object pulling",
