@@ -18,7 +18,7 @@ To install the package, follow these steps:
 1. Open your Unity project.
 2. Open `Window > Package Manager`.
 3. Click on the `+` button in the top left corner and select `Add package from git URL...`.
-4. Enter the following URL: `https://github.com/zloivan/SoundService.git` and click `Add`.
+4. Enter the following URL: `https://github.com/zloivan/sound-system.git` and click `Add`.
 
 ## Usage
 ### Setup
