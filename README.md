@@ -1,9 +1,9 @@
-# Unity Sound System
+# IKhom Sound System
 
 ![Unity Sound System](https://img.shields.io/badge/unity-2021.1%2B-blue)
 
 ## Overview
-The Unity Sound System is an efficient sound management solution that supports object pooling. This system helps manage audio playback with minimal overhead, ensuring optimal performance for your Unity projects.
+The IKhom Sound System is an efficient sound management solution that supports object pooling. This system helps manage audio playback with minimal overhead, ensuring optimal performance for your Unity projects.
 
 ## Features
 - Object pooling for sound emitters
